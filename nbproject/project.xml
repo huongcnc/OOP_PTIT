@@ -6,6 +6,7 @@
             <name>LTHDTCodePtit</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src.trenlop.dir"/>
                 <root id="src.TH.dir"/>
             </source-roots>
             <test-roots>
