@@ -1,6 +1,6 @@
-package MDT.J05043;
+package MDT.J05044;
 
-import MDT.J05045.NhanVien;
+
 import java.util.*;
 
 /**
@@ -19,9 +19,11 @@ public class Main {
         while(t-->0){
             ls.add(new NhanVien(sc.nextLine(),sc.nextLine(),Integer.parseInt(sc.nextLine()),Integer.parseInt(sc.nextLine())));
         }
+        String s = sc.nextLine();
         for(NhanVien x : ls){
-            System.out.println(x);
+            if(x.check(s)) System.out.println(x);
         }
     }
     
 }
+

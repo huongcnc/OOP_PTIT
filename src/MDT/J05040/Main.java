@@ -1,6 +1,6 @@
-package MDT.J05043;
+package MDT.J05040;
 
-import MDT.J05045.NhanVien;
+
 import java.util.*;
 
 /**
@@ -17,9 +17,10 @@ public class Main {
         ArrayList<NhanVien> ls = new ArrayList<>();
         int t = Integer.parseInt(sc.nextLine());
         while(t-->0){
-            ls.add(new NhanVien(sc.nextLine(),sc.nextLine(),Integer.parseInt(sc.nextLine()),Integer.parseInt(sc.nextLine())));
+            ls.add(new NhanVien(sc.nextLine(),Integer.parseInt(sc.nextLine()),
+            Integer.parseInt(sc.nextLine()),sc.nextLine()));
         }
-        for(NhanVien x : ls){
+        for(NhanVien x:ls){
             System.out.println(x);
         }
     }

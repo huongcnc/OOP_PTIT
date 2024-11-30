@@ -14,7 +14,7 @@ public class SinhVien {
         this.email = email;
     }
     public boolean checkKhoa(String khoa){
-        return khoa.equals(String.format("20%s", ma.substring(1,3)));
+        return khoa.equals(String.format("20%s", lop.substring(1,3)));
     }
     @Override
     public String toString() {

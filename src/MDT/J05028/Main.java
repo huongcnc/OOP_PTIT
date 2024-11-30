@@ -1,6 +1,5 @@
-package MDT.J05043;
+package MDT.J05028;
 
-import MDT.J05045.NhanVien;
 import java.util.*;
 
 /**
@@ -14,12 +13,13 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ArrayList<NhanVien> ls = new ArrayList<>();
+        ArrayList<DoanhNghiep> ls = new ArrayList<>();
         int t = Integer.parseInt(sc.nextLine());
         while(t-->0){
-            ls.add(new NhanVien(sc.nextLine(),sc.nextLine(),Integer.parseInt(sc.nextLine()),Integer.parseInt(sc.nextLine())));
+            ls.add(new DoanhNghiep(sc.nextLine(),sc.nextLine(),Integer.parseInt(sc.nextLine())));
         }
-        for(NhanVien x : ls){
+        Collections.sort(ls);
+        for(DoanhNghiep x:ls){
             System.out.println(x);
         }
     }
